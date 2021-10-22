@@ -1,0 +1,48 @@
+.beneficios{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.beneficios__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.beneficios__painel-item--dinheiro{
+    background: url('../img/icone-dinheiro.png');
+    
+}
+.beneficios__painel-item--tempo{
+    background: url('../img/icone-relogio.png');
+    
+}
+.beneficios__painel-item--quimica{
+    background: url('../img/icone-quimica.png');
+    
+}
+.beneficios__painel-item{
+    max-width: 350px;
+    box-sizing: border-box;
+    padding: 2rem 0 2rem 5rem;
+    background-repeat: no-repeat;
+    background-position-x: 2.5rem;
+    background-position-y: 1.25rem;
+}
+
+.beneficios__painel-titulo{
+    text-transform: uppercase;
+    color: var(--cinza-escuro);
+    font-family: var(--opensans);
+    font-weight: 700;
+    font-size: 19px;
+}
+
+
+@media (min-width:1024px) {
+
+    .beneficios__list{
+        justify-content: space-around;
+    }
+    
+}

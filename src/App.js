@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import "./Assets/css/base.css";
+import "./Assets/css/cabecalho.css";
+import "./Assets/css/chamada.css";
+import "./Assets/css/destaques.css";
+
+import HeaderNav from "./Components/Header/header";
+import Chamada from "./Components/Chamada/chamada";
+import Destaques from "./Components/Destaques/destaques";
+import Beneficios from "./Components/Beneficios/beneficios";
+import Planos from "./Components/Planos/Planos";
+import Sobre from "./Components/Sobre/Sobre";
+import Contato from "./Components/Contato/Contato";
+import Institucional from "./Components/Institucional/Institucional";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <HeaderNav />
+      <main>
+        <Chamada />
+        <Destaques />
+        <Beneficios />
+        <Sobre />
+        <Planos />
+        <Contato /> 
+        <Institucional />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </>
   );
 }
 
