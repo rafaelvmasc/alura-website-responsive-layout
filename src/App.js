@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <HeaderNav />
-      <main>
+      <div>
         <Chamada />
         <Destaques />
         <Beneficios />
@@ -27,7 +27,7 @@ function App() {
         <Planos />
         <Contato /> 
         <Institucional />
-      </main>
+      </div>
       <footer>
         <Footer />
       </footer>
